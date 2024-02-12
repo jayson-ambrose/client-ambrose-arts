@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      heading: ['Advent Pro', 'sans-serif']
+      advent: ['Advent Pro', 'sans-serif']
     },
     extend: {},
   },
