@@ -1,13 +1,14 @@
 import React from "react";
+import NavbarRoute from "./NavbarRoute";
 
 export default function Navbar () {
     
     return (
         <div className='flex justify-center'>
-            <h2 className='text-2xl px-8 pt-2 hover:underline cursor-pointer'>Home</h2>
-            <h2 className='text-2xl px-8 pt-2 hover:underline cursor-pointer'>Gallery</h2> 
-            <h2 className='text-2xl px-8 pt-2 hover:underline cursor-pointer'>Artists</h2> 
-            <h2 className='text-2xl px-8 pt-2 hover:underline cursor-pointer'>Commissions</h2>  
+            <NavbarRoute routeName='Home'/>
+            <NavbarRoute routeName='Gallery'/>
+            <NavbarRoute routeName='Artists'/>
+            <NavbarRoute routeName='Commissions'/> 
         </div>
         
     )
