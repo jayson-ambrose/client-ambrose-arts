@@ -1,0 +1,33 @@
+{
+    "pieces": [
+        {
+            "id": "1", 
+            "title": "Purple Goomba", 
+            "price": "10000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/my2pclnb8b7.png",
+            "artist": "Robert Tomathy",
+            "status": "available"
+        },
+        {
+            "id": "2", 
+            "title": "The Clown", 
+            "price": "20000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/my2pclnb8b7.png",
+            "artist": "Benedill Cumberpickle",
+            "status": "sold"
+        },
+        {
+            "id": "3", 
+            "title": "Thief of Burgers", 
+            "price": "20000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/my2pclnb8b7.png",
+            "artist": "Robert Tomathy",
+            "status": "sold"
+        }
+        
+
+    ]
+}
