@@ -22,7 +22,7 @@ export default function GalleryModal ({ setGalleryModal }) {
     }
 
     return (
-        <div className='h-2/3 w-2/3 bg-lightbrown fixed' ref={newRef}>
+        <div className='h-2/3 w-2/3 bg-lightbrown absolute' ref={newRef}>
                 <h1>Hello World</h1>
         </div>
     )
