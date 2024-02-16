@@ -13,7 +13,7 @@ import Commissions from './components/Commissions'
 export default function App() {
 
   return (
-    <>
+    <div>
       <TitleLine/>
       <Navbar/>
       <Routes>
@@ -22,6 +22,6 @@ export default function App() {
         <Route exact path='/artists' element={<Artists/>}/>
         <Route exact path='/commissions' element={<Commissions/>}/>
       </Routes>
-    </>
+    </div>
   )
 }
