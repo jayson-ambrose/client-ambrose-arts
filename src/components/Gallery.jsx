@@ -25,7 +25,7 @@ export default function Gallery () {
             <h1 className='pt-10 font-advent font-medium text-3xl'>
                 Gallery
             </h1>
-            {galleryModal ? <GalleryModal setGalleryModal={setGalleryModal}/> : null}
+            {galleryModal ? <GalleryModal galleryModal={galleryModal} setGalleryModal={setGalleryModal}/> : null}
             {renderedPieces}            
         </div>
     )
