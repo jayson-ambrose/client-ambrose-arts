@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import GalleryPiece from "./GalleryPiece";
-import GalleryModal from "./GalleryModal";
 
 export default function Gallery () {
 
     const [pieces, setPieces] = useState([])
-    const [galleryModal, setGalleryModal] = useState(false)
 
     useEffect(() => {
         fetch('http://localhost:3000/pieces')
@@ -16,7 +14,7 @@ export default function Gallery () {
     const renderedPieces = pieces.map((piece)=>{
         
         return (
-            <GalleryPiece key={piece.id} piece={piece} setGalleryModal={setGalleryModal}/>
+            <GalleryPiece key={piece.id} piece={piece}/>
         )
     })
 
@@ -24,8 +22,7 @@ export default function Gallery () {
         <div className="flex flex-col items-center ">
             <h1 className='pt-10 font-advent font-medium text-3xl'>
                 Gallery
-            </h1>
-            {galleryModal ? <GalleryModal galleryModal={galleryModal} setGalleryModal={setGalleryModal}/> : null}
+            </h1>            
             {renderedPieces}            
         </div>
     )
