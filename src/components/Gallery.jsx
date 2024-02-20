@@ -5,10 +5,19 @@ export default function Gallery () {
 
     const [pieces, setPieces] = useState([])
 
+    async function fetchPieces () {
+        const resp = await fetch('http://localhost:3000/pieces')
+
+        if (resp.ok) {
+            setPieces(await resp.json())
+        } else {
+            console.log(resp.status + ': ' + resp.statusText)
+        }
+        
+    }
+
     useEffect(() => {
-        fetch('http://localhost:3000/pieces')
-        .then(resp => resp.json())
-        .then(data => setPieces(data))
+        fetchPieces()
     }, [])
 
     const renderedPieces = pieces.map((piece)=>{
