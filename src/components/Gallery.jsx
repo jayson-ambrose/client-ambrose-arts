@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GalleryPiece from "./GalleryPiece";
+import Heading from "./Heading";
 
 export default function Gallery () {
 
@@ -29,9 +30,7 @@ export default function Gallery () {
 
     return (
         <div className="flex flex-col items-center ">
-            <h1 className='pt-10 font-advent font-medium text-3xl'>
-                Gallery
-            </h1>            
+            <Heading name='Gallery'/>          
             {renderedPieces}            
         </div>
     )

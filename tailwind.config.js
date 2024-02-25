@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      advent: ['Advent Pro', 'sans-serif']
+      advent: ['Advent Pro', 'sans-serif'],
+      forum: ['Forum', 'serif']
     },
     extend: {
       colors: {

@@ -1,12 +1,11 @@
 import React from "react"
+import Heading from "./Heading"
 
 export default function Welcome () {
 
     return (
         <div className="flex justify-center">
-            <h1 className='pt-10 font-advent font-medium text-3xl'>
-                Welcome
-            </h1>  
+            <Heading name='Welcome'/> 
         </div>        
     )
 }

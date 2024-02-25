@@ -24,6 +24,3 @@ export default function GalleryModal ({ galleryModal, setGalleryModal, piece }) 
       </Dialog>
     )
 }
-
-//current bugs... trying to surround modal in a blurred background which, when clicked will close the modal and nothing else.
-//modal may need to be implemented differently. Use headless ui dialog(modal)
