@@ -28,9 +28,9 @@ export default function Gallery () {
     })
 
     return (
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center">
             <Heading name='Gallery'/>
-            <div className="flex">       
+            <div className='flex flex-wrap'>       
                 {renderedPieces}
             </div>               
         </div>

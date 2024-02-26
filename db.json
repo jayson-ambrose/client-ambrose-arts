@@ -26,6 +26,33 @@
             "img_url": "https://cdn.imgchest.com/files/my2pclnb8b7.png",
             "artist": "Robert Tomathy",
             "status": "sold"
+        },
+        {
+            "id": "4", 
+            "title": "Curveball", 
+            "price": "40000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/84jdc8olwg4.png",
+            "artist": "Robert Tomathy",
+            "status": "available"
+        },
+        {
+            "id": "5", 
+            "title": "Longboi", 
+            "price": "45000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/84jdc8olwg4.png",
+            "artist": "Robert Tomathy",
+            "status": "available"
+        },
+        {
+            "id": "6", 
+            "title": "Wraptest", 
+            "price": "40000", 
+            "category": "watercolor", 
+            "img_url": "https://cdn.imgchest.com/files/84jdc8olwg4.png",
+            "artist": "Benedill Cumberpickle",
+            "status": "available"
         }
         
 
