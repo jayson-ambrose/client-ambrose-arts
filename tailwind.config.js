@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily: {
       advent: ['Advent Pro', 'sans-serif'],
-      forum: ['Forum', 'serif']
+      forum: ['Forum', 'serif'],
+      philosopher: ['Philosopher', 'serif']
     },
     extend: {
       colors: {
