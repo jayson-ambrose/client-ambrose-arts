@@ -13,8 +13,7 @@ export default function Gallery () {
             setPieces(await resp.json())
         } else {
             console.log(resp.status + ': ' + resp.statusText)
-        }
-        
+        }        
     }
 
     useEffect(() => {
@@ -30,8 +29,10 @@ export default function Gallery () {
 
     return (
         <div className="flex flex-col items-center ">
-            <Heading name='Gallery'/>          
-            {renderedPieces}            
+            <Heading name='Gallery'/>
+            <div className="flex">       
+                {renderedPieces}
+            </div>               
         </div>
     )
 }
