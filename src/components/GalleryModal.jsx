@@ -31,7 +31,7 @@ export default function GalleryModal ({ galleryModal, setGalleryModal, piece }) 
                     {/* description?  */}
                     <img className='w-fit' src={img_url}/>
                   </div>
-                    <h1>By: {artist}</h1>
+                    <h1 className='font-advent text-xl '>By: {artist}</h1>
                     <ThemedButton text='Contact Artist'/>
                 </div>
               </Dialog.Panel>
