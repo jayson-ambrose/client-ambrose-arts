@@ -11,7 +11,7 @@ export default function GalleryPiece ({ piece }) {
 
     return (
         <div onClick={() => handleSetGalleryModal()} 
-            className='flex flex-col m-5 drop-shadow-lg bg-offwhite rounded-xl cursor-pointer 
+            className='flex flex-col m-5 drop-shadow-lg bg-offwhite rounded cursor-pointer 
                 overflow-hidden select-none border-slate-100 border-2'>
             <h1 className="font-philosopher font-semibold bg-offwhite text-center text-xl">{piece.title}</h1>
             <div className='flex' key={piece.id}>

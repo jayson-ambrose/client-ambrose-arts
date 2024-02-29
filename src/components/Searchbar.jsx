@@ -19,6 +19,7 @@ export default function Searchbar ({
                     placeholder={placeholder}
                     onChange={(e) => controlCallback(e)}
                     value={controlValue}
+                    autoComplete="off"
                     >
                 </input>
             </label>             
