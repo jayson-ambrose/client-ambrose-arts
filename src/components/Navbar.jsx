@@ -4,7 +4,7 @@ import NavbarRoute from "./NavbarRoute";
 export default function Navbar () {
     
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center bg-darkbrown'>
             <NavbarRoute routeName='/' name='Home'/>
             <NavbarRoute routeName='/gallery' name='Gallery'/>
             <NavbarRoute routeName='/artists' name='Artists'/>

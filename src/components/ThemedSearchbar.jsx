@@ -1,7 +1,7 @@
 import React from "react";
 import { MagnifyingGlassIcon } from '@heroicons/react/16/solid'
 
-export default function Searchbar ({
+export default function ThemedSearchbar ({
     placeholder=null,
     name,
     controlCallback,
@@ -9,7 +9,7 @@ export default function Searchbar ({
 }) {
 
     return (
-        <div>
+        <div className="pt-5">
             <label htmlFor={name} className="relative text-gray-400 focus-within:text-black block">
                 <MagnifyingGlassIcon className="h-6 pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-1"/>
                 <input
@@ -18,9 +18,7 @@ export default function Searchbar ({
                     name={name}
                     placeholder={placeholder}
                     onChange={(e) => controlCallback(e)}
-                    value={controlValue}
-                    >
-                </input>
+                    value={controlValue}/>
             </label>             
         </div>
             

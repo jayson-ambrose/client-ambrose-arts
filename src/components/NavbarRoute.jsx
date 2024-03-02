@@ -7,7 +7,8 @@ export default function Navbar ({ routeName, name}) {
 
     return(
         <h2 className={`text-2xl px-8 pt-2 hover:underline cursor-pointer font-philosopher
-            font-semibold select-none ${location.pathname == routeName ? 'underline' : null}`}>
+            font-semibold select-none ${location.pathname == routeName ? 'underline' : null}
+            text-offwhite`}>
                 <Link to={routeName}>{name}</Link>
         </h2>
     )

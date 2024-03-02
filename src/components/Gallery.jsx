@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GalleryPiece from "./GalleryPiece";
 import Heading from "./Heading";
-import GallerySearch from "./GallerySearch";
+import ThemedSearchbar from "./ThemedSearchbar";
 
 export default function Gallery () {
 
@@ -39,7 +39,11 @@ export default function Gallery () {
     return (
         <div className="flex flex-col items-center">
             <Heading name='Gallery'/>
-            <GallerySearch handleSetSearchValue={handleSetSearchValue} searchValue={searchValue}/>
+            <ThemedSearchbar
+                placeholder='Filter gallery...' 
+                name='search'
+                controlCallback={handleSetSearchValue}
+                controlValue={searchValue}/>
             <div className='flex flex-wrap'>       
                 {renderedPieces}
             </div>               
