@@ -3,20 +3,14 @@
 @tailwind utilities;
 
 html {
-    --s: 80px; /* the size */
-    --c: #e6e6e6;
-    
-    --_s: calc(2*var(--s)) calc(2*var(--s));
-    --_g: 35.36% 35.36% at;
-    --_c: #0000 66%,#ffffff 68% 70%,#0000 72%;
-    background:
-      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-      radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-      radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-      var(--c);
-  }
+  --s: 70px; /* control the size */
+  --c: #ffffff;
   
-
+  --_l: #0000 46%,var(--c) 47% 53%,#0000 54%;
+  background:
+    radial-gradient(100% 100% at 100% 100%,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100% at 0    0   ,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100%,#0000 22%,var(--c) 23% 29%, #0000 30% 34%,var(--c) 35% 41%,#0000 42%)
+    #F6F9E8;
+  background-size: calc(var(--s)*2) calc(var(--s)*2);
+}

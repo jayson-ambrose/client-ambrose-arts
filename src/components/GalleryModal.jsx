@@ -23,7 +23,7 @@ export default function GalleryModal ({ galleryModal, setGalleryModal, piece }) 
             <div className="fixed inset-0 bg-black/50" aria-hidden="true" />  
             <div className="fixed inset-0 flex justify-center items-center align-center">
               <Dialog.Panel className="w-2/3 rounded bg-offwhite justify-center pb-5">
-                <h1 className='text-center bg-darkbrown text-offwhite font-semibold font-forum text-3xl rounded-t'>
+                <h1 className='text-center bg-dark text-offwhite font-semibold font-forum text-3xl rounded-t'>
                   {title}
                 </h1>
                 <div className='flex flex-col w-full items-center'>

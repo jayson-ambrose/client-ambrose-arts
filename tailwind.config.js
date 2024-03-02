@@ -12,11 +12,11 @@ export default {
     },
     extend: {
       colors: {
-        'offwhite': '#fffefe',
-        'bluegrey': '#b0c4c7',
-        'lightbrown': '#7a6d5f',
-        'midbrown': '#695a56',
-        'darkbrown': '#4a433e',
+        'offwhite': '#F6F9E8',
+        'bluegrey': '#B1C0AA',
+        'light': '#5194A1',
+        'mid': '#1B476C',
+        'dark': '#1E3A5D',
       },
       dropShadow: {
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
