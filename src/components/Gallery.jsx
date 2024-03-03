@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import GalleryPiece from "./GalleryPiece";
+import GalleryCard from "./GalleryCard";
 import Heading from "./Heading";
 import ThemedSearchbar from "./ThemedSearchbar";
 
@@ -30,7 +30,7 @@ export default function Gallery () {
         .includes(searchValue.toLowerCase()))
         .map((piece)=>{        
             return (
-                <GalleryPiece key={piece.id} piece={piece}/>
+                <GalleryCard key={piece.id} piece={piece}/>
             )
     })
 

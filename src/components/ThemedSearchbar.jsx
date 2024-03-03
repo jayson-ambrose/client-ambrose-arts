@@ -18,7 +18,8 @@ export default function ThemedSearchbar ({
                     name={name}
                     placeholder={placeholder}
                     onChange={(e) => controlCallback(e)}
-                    value={controlValue}/>
+                    value={controlValue}
+                    autoComplete="false"/>
             </label>             
         </div>
             
