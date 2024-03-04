@@ -62,12 +62,53 @@
         {
             "id": "1",
             "name": "Robert Tomathy",
-            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brad_Pitt_2019_by_Glenn_Francis.jpg/1200px-Brad_Pitt_2019_by_Glenn_Francis.jpg"
         },
         {
             "id": "2",
             "name": "Benedill Cumberpickle",
-            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ce84cd7d-bdf1-4f7a-8855-757550baba4f/d6oidgs-bbb8124b-3f0e-480b-822e-784af866b308.jpg/v1/fill/w_900,h_1359,q_75,strp/pickle_man_by_xmasdog_d6oidgs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NlODRjZDdkLWJkZjEtNGY3YS04ODU1LTc1NzU1MGJhYmE0ZlwvZDZvaWRncy1iYmI4MTI0Yi0zZjBlLTQ4MGItODIyZS03ODRhZjg2NmIzMDguanBnIiwiaGVpZ2h0IjoiPD0xMzU5Iiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9jZTg0Y2Q3ZC1iZGYxLTRmN2EtODg1NS03NTc1NTBiYWJhNGZcL3htYXNkb2ctNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.BXtK154VCSYIDq8YY-2NOAGr6Y8QcBIE5ww7MEPj-6k"
+        },
+        {
+            "id": "3",
+            "name": "Maggie Smith",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img_url": "https://cdn.imgchest.com/files/d7ogcna9g2y.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Roger Ambrose",
+            "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img_url": "https://cdn.imgchest.com/files/w7pjconezv7.jpg"
+        }
+    ],
+
+    "articles": [
+        {
+            "id": "1",
+            "title": "New Exhibition!",
+            "date_posted": "03/03/2024",
+            "dates_effective": "",
+            "img_url": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac maximus ex. Integer sodales, magna at accumsan malesuada, felis purus efficitur velit, non feugiat leo justo vitae nibh. In mi ligula, scelerisque pulvinar lorem eu, scelerisque imperdiet nisi. Sed pellentesque ex vel tellus viverra, vitae interdum velit tristique. Vestibulum rutrum, lacus eget elementum porta, est diam vulputate lacus, sit amet maximus tellus erat a libero. Donec eget sollicitudin leo, nec tempor ex. Nullam non dolor eu lectus tincidunt malesuada congue at lectus. Morbi in diam sed tellus tempus lacinia. Maecenas lobortis dignissim justo, sit amet mattis velit faucibus ac. Donec iaculis, nunc vitae consectetur vestibulum, nulla odio tempus ex, sit amet fringilla orci nisi id tellus. Nam id nunc eget lacus fermentum sollicitudin sed nec magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat."
+        },
+        {
+            "id": "2",
+            "title": "Test County Art Show",
+            "date_posted": "03/08/2024",
+            "dates_effective": "",
+            "img_url": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac maximus ex. Integer sodales, magna at accumsan malesuada, felis purus efficitur velit, non feugiat leo justo vitae nibh. In mi ligula, scelerisque pulvinar lorem eu, scelerisque imperdiet nisi. Sed pellentesque ex vel tellus viverra, vitae interdum velit tristique. Vestibulum rutrum, lacus eget elementum porta, est diam vulputate lacus, sit amet maximus tellus erat a libero. Donec eget sollicitudin leo, nec tempor ex. Nullam non dolor eu lectus tincidunt malesuada congue at lectus. Morbi in diam sed tellus tempus lacinia. Maecenas lobortis dignissim justo, sit amet mattis velit faucibus ac. Donec iaculis, nunc vitae consectetur vestibulum, nulla odio tempus ex, sit amet fringilla orci nisi id tellus. Nam id nunc eget lacus fermentum sollicitudin sed nec magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat."
+        },
+        {
+            "id": "2",
+            "title": "Test County Art Show",
+            "date_posted": "03/08/2024",
+            "dates_effective": "03/03/24 - 03/08/24",
+            "img_url": "",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac maximus ex. Integer sodales, magna at accumsan malesuada, felis purus efficitur velit, non feugiat leo justo vitae nibh. In mi ligula, scelerisque pulvinar lorem eu, scelerisque imperdiet nisi. Sed pellentesque ex vel tellus viverra, vitae interdum velit tristique. Vestibulum rutrum, lacus eget elementum porta, est diam vulputate lacus, sit amet maximus tellus erat a libero. Donec eget sollicitudin leo, nec tempor ex. Nullam non dolor eu lectus tincidunt malesuada congue at lectus. Morbi in diam sed tellus tempus lacinia. Maecenas lobortis dignissim justo, sit amet mattis velit faucibus ac. Donec iaculis, nunc vitae consectetur vestibulum, nulla odio tempus ex, sit amet fringilla orci nisi id tellus. Nam id nunc eget lacus fermentum sollicitudin sed nec magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat."
         }
     ]
 }
