@@ -13,7 +13,7 @@ export default function Gallery () {
     }, [])
 
     async function fetchPieces () {
-        const resp = await fetch('http://localhost:3000/pieces')
+        const resp = await fetch('https://server-ambrose-art.onrender.com/pieces')
 
         if (resp.ok) {
             setPieces(await resp.json())
@@ -34,8 +34,6 @@ export default function Gallery () {
             )
     })
 
-    console.log(searchValue)
-
     return (
         <div className="flex flex-col items-center">
             <Heading name='Gallery'/>
@@ -46,7 +44,7 @@ export default function Gallery () {
                 controlValue={searchValue}/>
             <div className='flex flex-wrap'>       
                 {renderedPieces}
-            </div>               
+            </div>          
         </div>
     )
 }

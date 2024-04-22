@@ -11,7 +11,7 @@ export default function Artists () {
     }, [])
 
     async function fetchArtists () {
-        const resp = await fetch('http://localhost:3000/artists')
+        const resp = await fetch('https://server-ambrose-art.onrender.com/artists')
 
         if (resp.ok) {
             setArtists(await resp.json())
