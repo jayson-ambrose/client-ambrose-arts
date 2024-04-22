@@ -1,17 +1,62 @@
-import React from "react"
+import React, { useState } from "react"
 import Heading from "./Heading"
+import ThemedButton from "./ThemedButton"
+import { loggedInAtom, activeUserAtom } from "../lib/atoms"
+import { useRecoilState, useSetRecoilState } from "recoil"
 
 export default function Welcome () {
 
-    return (
-        <div className="flex justify-center">
-            <Heading name='Welcome'/> 
-        </div>        
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+
+    const [loggedIn, setLoggedIn] = useRecoilState(loggedInAtom)
+    const setActiveUser = useSetRecoilState(activeUserAtom)
+
+    const handleLogin = async () => {
+
+        const credentials = {username: username, password: password}
+
+        await fetch('https://server-ambrose-art.onrender.com/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify(credentials)
+        })
+        .then(resp => {
+            if(resp.ok) {
+                resp.json().then(data => {
+                    setLoggedIn(true)
+                    setActiveUser(data)
+                })
+            }
+        })
+    }
+
+    const handleChangeUsername = (e) => {
+        setUsername(e.target.value)
+    }
+
+    const handleChangePassword = (e) => {
+        setPassword(e.target.value)
+    }
+
+    const underConstruction = (
+        <div className="pt-5">
+            <h1>SITE UNDER CONSTRUCTION</h1>
+            <p>Please log in to view the site.</p>
+            <div className="flex flex-col">
+                <input onChange={handleChangeUsername} value={username} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Username"/>
+                <input onChange={handleChangePassword} value={password} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Password" type="password"/>
+                <ThemedButton text={'Login'} callback={handleLogin}/>
+            </div>
+        </div>
+    )
+
+    return (            
+        <div className="flex flex-col justify-center items-center">
+            <Heading name='Welcome'/>
+            {loggedIn ? null: underConstruction}             
+        </div>     
     )
 }
-
-        // 'forest-green': '#577279',
-        // 'tinted-white': '#f0f0ef',
-        // 'grey-aqua': '#8fc2c9',
-        // 'camo-green': '#839575',
-        // 'dark-aqua': '#345d67',
