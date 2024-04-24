@@ -12,7 +12,9 @@ export default function Welcome () {
     const [loggedIn, setLoggedIn] = useRecoilState(loggedInAtom)
     const setActiveUser = useSetRecoilState(activeUserAtom)
 
-    const handleLogin = async () => {
+    const handleLogin = async (e) => {
+        
+        e?.preventDefault()
 
         const credentials = {username: username, password: password}
 
@@ -42,14 +44,14 @@ export default function Welcome () {
     }
 
     const underConstruction = (
-        <div className="pt-5">
+        <div className="flex flex-col pt-5 items-center justify-center">
             <h1>SITE UNDER CONSTRUCTION</h1>
-            <p>Please log in to view the site.</p>
-            <div className="flex flex-col">
+            <p>Please log in to view the site. This is not a finished product and there may be frequent downtime while we work on the site.</p>
+            <form onSubmit={handleLogin} className="flex flex-col">
                 <input onChange={handleChangeUsername} value={username} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Username"/>
                 <input onChange={handleChangePassword} value={password} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Password" type="password"/>
                 <ThemedButton text={'Login'} callback={handleLogin}/>
-            </div>
+            </form>
         </div>
     )
 
