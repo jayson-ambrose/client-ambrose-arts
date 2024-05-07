@@ -9,7 +9,7 @@ export default function Navbar () {
     const activeUser = useRecoilValue(activeUserAtom)
 
     const checkLoggedIn = () => {
-        if(loggedIn && activeUser.admin) {
+        if(loggedIn && activeUser?.admin) {
             return <NavbarRoute routeName='/dashboard' name='Dashboard'/>
         }
     }

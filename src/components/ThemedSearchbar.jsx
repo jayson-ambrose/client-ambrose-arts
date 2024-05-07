@@ -11,7 +11,7 @@ export default function ThemedSearchbar ({
     return (
         <div className="pt-5">
             <label htmlFor={name} className="relative text-gray-400 focus-within:text-black block">
-                <MagnifyingGlassIcon className="h-6 pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-1"/>
+                <MagnifyingGlassIcon className="h-6 pointer-events-none w-8 absolute top-1/2 transform -translate-y-1/2 left-1"/>
                 <input
                     className='border-2 rounded-2xl w-96 pl-10 font-philosopher text-lg' 
                     type='text'
