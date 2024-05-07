@@ -12,7 +12,7 @@ export default {
     },
     extend: {
       colors: {
-        'offwhite': '#EBF0EA',
+        'offwhite': '#fff',
         'bluegrey': '#B6DADD',
         'light': '#53ACBF',
         'mid': '#296883',
