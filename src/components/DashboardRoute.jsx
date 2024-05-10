@@ -1,14 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function NavbarRoute ({ routeName, name}) {
+export default function Navbar ({ routeName, name}) {
 
     const location = useLocation()
 
     return(
-        <div className={`text-2xl px-8 pt-2 hover:underline cursor-pointer font-philosopher
+        <div className={`text-xl px-8 pt-2 hover:underline cursor-pointer font-philosopher
             font-semibold select-none ${location.pathname == routeName ? 'underline' : null}
-            text-offwhite`}>
+            text-black`}>
                 <Link to={routeName}>{name}</Link>
         </div>
     )

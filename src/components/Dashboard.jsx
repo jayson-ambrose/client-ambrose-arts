@@ -1,12 +1,19 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom'
+
 import Heading from "./Heading";
+import DashboardNavbar from "./DashboardNavbar";
+import Testroute from "./Testroute";
 
 export default function Dashboard () {
 
     return (
         <div className="flex flex-col justify-center items-center">
             <Heading name='Admin Dashboard'/>
-            <h1>Coming soon. This is where you will be able to upload images, add users and manage the gallery.</h1>
+            <DashboardNavbar/>
+            <Routes>
+                <Route exact path='/test' element={<Testroute/>}/>
+            </Routes>
         </div>
     )
 }
