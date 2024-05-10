@@ -2,11 +2,21 @@ import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import ThemedButton from "./ThemedButton"
 import { useSetRecoilState } from "recoil";  
+import { activeUserAtom, loggedInAtom } from "../lib/atoms";
 
 export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
 
-    const handleLogout = () => {
-        console.log('logout')
+    const setActiveUser = useSetRecoilState(activeUserAtom)
+    const setLoggedIn = useSetRecoilState(loggedInAtom)
+
+    const handleLogout = async () => {
+        fetch('/api/logout', {
+          method: 'DELETE'
+        }).then(()=> {
+          setActiveUser(null)
+          setLoggedIn(false)
+          setLogoutModal(false)
+        })
     }
 
     return (
@@ -26,6 +36,7 @@ export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
               <div className="fixed inset-0 bg-black/50" aria-hidden="true" />  
               <div className="fixed inset-0 flex justify-center items-center align-center">
                 <Dialog.Panel className="w-2/3 rounded bg-offwhite justify-center pb-5">
+                  <h1>Are you sure you want to logout? Any unsubmitted changes will be lost.</h1>
                   <ThemedButton text={'Logout'} callback={handleLogout}/>
                 </Dialog.Panel>
               </div>
