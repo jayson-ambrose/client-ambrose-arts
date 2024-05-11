@@ -17,7 +17,8 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
 
         const credentials = {username: username, password: password}
 
-        await fetch('https://server-ambrose-art.onrender.com/login', {
+        await fetch('/api/login', {
+        // await fetch('https://server-ambrose-art.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -61,6 +62,7 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
             <div className="fixed inset-0 flex justify-center items-center align-center">
               <Dialog.Panel className="w-2/3 rounded bg-offwhite justify-center pb-5">
                 <form onSubmit={handleLogin} className="flex flex-col">
+                    <h1>Welcome, please enter your credentials. Contact the site administrator if you have any trouble.</h1>
                     <input onChange={handleChangeUsername} value={username} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Username"/>
                     <input onChange={handleChangePassword} value={password} className='border border-slate-600 rounded-lg my-1 pl-1' placeholder="Password" type="password"/>
                     <ThemedButton text={'Login'} callback={handleLogin}/>
