@@ -17,8 +17,8 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
 
         const credentials = {username: username, password: password}
 
-        await fetch('/api/login', {
-        // await fetch('https://server-ambrose-art.onrender.com/login', {
+        // await fetch('/api/login', {
+        await fetch('https://server-ambrose-art.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
