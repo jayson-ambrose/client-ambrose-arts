@@ -6,10 +6,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        // Toggle target line to select development server or live server.
-        target: 'https://server-ambrose-art.onrender.com', //live
-        // target: 'http://127.0.0.1:5555', //development
-        changeOrigin: true,
+        target: 'https://server-ambrose-art.onrender.com',
+        changeOrigin: false,
         rewrite: (path) => path.replace('/api/', ''),
         secure: false,}
     }
