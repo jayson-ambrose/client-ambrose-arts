@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Heading from "./Heading";
 import ArtistCard from "./ArtistCard";
+import { urlPrefix } from "../lib/helpers";
 
 export default function Artists () {
 
@@ -11,7 +12,7 @@ export default function Artists () {
     }, [])
 
     async function fetchArtists () {
-        const resp = await fetch('https://server-ambrose-art.onrender.com/artists')
+        const resp = await fetch(`${urlPrefix}/artists`)
 
         if (resp.ok) {
             setArtists(await resp.json())

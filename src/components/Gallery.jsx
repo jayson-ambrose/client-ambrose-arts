@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import GalleryCard from "./GalleryCard";
 import Heading from "./Heading";
 import ThemedSearchbar from "./ThemedSearchbar";
+import { useRecoilValue } from "recoil";
+import { urlPrefix } from "../lib/helpers";
 
 export default function Gallery () {
 
@@ -13,7 +15,7 @@ export default function Gallery () {
     }, [])
 
     async function fetchPieces () {
-        const resp = await fetch('https://server-ambrose-art.onrender.com/pieces')
+        const resp = await fetch(`${urlPrefix}/pieces`)
 
         if (resp.ok) {
             setPieces(await resp.json())

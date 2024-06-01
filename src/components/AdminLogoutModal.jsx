@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import ThemedButton from "./ThemedButton"
 import { useSetRecoilState } from "recoil";  
 import { activeUserAtom, loggedInAtom } from "../lib/atoms";
+import { urlPrefix } from "../lib/helpers";
 
 export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
 
@@ -10,7 +11,7 @@ export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
     const setLoggedIn = useSetRecoilState(loggedInAtom)
 
     const handleLogout = async () => {
-        fetch('/api/logout', {
+        fetch(`${urlPrefix}/logout`, {
           method: 'DELETE'
         }).then(()=> {
           setActiveUser(null)

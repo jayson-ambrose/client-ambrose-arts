@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import ThemedButton from "./ThemedButton"
 import { loggedInAtom, activeUserAtom } from "../lib/atoms"
 import { useRecoilState, useSetRecoilState } from "recoil"
+import { urlPrefix } from "../lib/helpers";
 
 export default function AdminLoginModal({loginModal, setLoginModal}) {
     const [username, setUsername] = useState('')
@@ -17,8 +18,7 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
 
         const credentials = {username: username, password: password}
 
-        // await fetch('/api/login', {
-        await fetch('https://server-ambrose-art.onrender.com/login', {
+        await fetch(`${urlPrefix}/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

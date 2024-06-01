@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { urlPrefix } from "../lib/helpers";
 
 export default function GalleryManagerTable () {
     
@@ -9,7 +10,7 @@ export default function GalleryManagerTable () {
     }, [])
 
     async function fetchPieces () {
-        const resp = await fetch('/api/pieces')
+        const resp = await fetch(`${urlPrefix}/pieces`)
 
         if (resp.ok) {
             setPieces(await resp.json())
