@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { useSetRecoilState } from 'recoil'
+import { useSetRecoilState, } from 'recoil'
 import { activeUserAtom, loggedInAtom } from './lib/atoms'
+import { urlPrefix } from './lib/helpers'
 
 //----------component imports---------------------
 import Navbar from './components/Navbar'
@@ -20,7 +21,7 @@ export default function App() {
   const setLoggedIn = useSetRecoilState(loggedInAtom)
 
   async function checkSession() {
-    await fetch ('/api/checksession')
+    await fetch (`${urlPrefix}/checksession`)
     .then(resp => {
       if(resp.ok){
         resp.json()

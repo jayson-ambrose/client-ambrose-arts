@@ -7,7 +7,8 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://server-ambrose-art.onrender.com',
-        changeOrigin: false,
+        // target: 'http://127.0.0.1:5555',
+        changeOrigin: true,
         rewrite: (path) => path.replace('/api/', ''),
         secure: false,}
     }
