@@ -14,3 +14,8 @@ export const activeUserAtom = atom({
     key: 'activeUserKey',
     default: null
 })
+
+export const devModeAtom = atom({
+    key: 'devModeKey',
+    default: false
+})

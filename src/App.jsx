@@ -20,7 +20,7 @@ export default function App() {
   const setLoggedIn = useSetRecoilState(loggedInAtom)
 
   async function checkSession() {
-    await fetch ('/api/checksession')
+    await fetch ('https://server-ambrose-art.onrender.com/checksession')
     .then(resp => {
       if(resp.ok){
         resp.json()

@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Heading from "./Heading";
 import DashboardNavbar from "./DashboardNavbar";
-import Testroute from "./Testroute";
+import GalleryManager from "./GalleryManager";
 
 export default function Dashboard () {
 
@@ -12,7 +12,7 @@ export default function Dashboard () {
             <Heading name='Admin Dashboard'/>
             <DashboardNavbar/>
             <Routes>
-                <Route exact path='/test' element={<Testroute/>}/>
+                <Route exact path='/gallerymanager' element={<GalleryManager/>}/>
             </Routes>
         </div>
     )
