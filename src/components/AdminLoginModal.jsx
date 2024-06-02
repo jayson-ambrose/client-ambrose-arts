@@ -28,7 +28,6 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
             body:JSON.stringify(credentials)
         })
         .then(resp => {
-            console.log(resp)
             if(resp.ok) {
                 resp.json().then(data => {
                     setLoggedIn(true)
