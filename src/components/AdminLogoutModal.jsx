@@ -12,7 +12,8 @@ export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
 
     const handleLogout = async () => {
         fetch(`${urlPrefix}/logout`, {
-          method: 'DELETE'
+          method: 'DELETE',
+          credentials: 'include'
         }).then(()=> {
           setActiveUser(null)
           setLoggedIn(false)

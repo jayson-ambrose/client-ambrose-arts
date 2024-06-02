@@ -13,8 +13,6 @@ export default function Navbar () {
             return <NavbarRoute routeName='/dashboard' name='Dashboard'/>
         }
     }
-
-    console.log(activeUser)
     
     return (
         <div className={`flex justify-center bg-dark ${loggedIn ? null : 'hidden'}`}>
