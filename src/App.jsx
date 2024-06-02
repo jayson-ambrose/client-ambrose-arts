@@ -21,7 +21,16 @@ export default function App() {
   const setLoggedIn = useSetRecoilState(loggedInAtom)
 
   async function checkSession() {
-    await fetch (`${urlPrefix}/checksession`)
+    await fetch (`${urlPrefix}/checksession`, {
+      method: 'GET',
+      credentials: 'include',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+    },
+    }
+
+    )
     .then(resp => {
       if(resp.ok){
         resp.json()
