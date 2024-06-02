@@ -20,12 +20,15 @@ export default function AdminLoginModal({loginModal, setLoginModal}) {
 
         await fetch(`${urlPrefix}/login`, {
             method: 'POST',
+            mode: 'cors',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
             },
             body:JSON.stringify(credentials)
         })
         .then(resp => {
+            console.log(resp)
             if(resp.ok) {
                 resp.json().then(data => {
                     setLoggedIn(true)
