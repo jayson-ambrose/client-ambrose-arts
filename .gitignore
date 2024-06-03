@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-src/lib/helpers.js
+# Helper files that should not change on deploy branch
+./src/lib/helpers.js
