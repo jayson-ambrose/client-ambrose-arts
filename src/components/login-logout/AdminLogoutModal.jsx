@@ -1,9 +1,9 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ThemedButton from "./ThemedButton"
+import ThemedButton from "../ui/ThemedButton"
 import { useSetRecoilState } from "recoil";  
-import { activeUserAtom, loggedInAtom } from "../lib/atoms";
-import { urlPrefix } from "../lib/helpers";
+import { activeUserAtom, loggedInAtom } from "../../lib/atoms";
+import { urlPrefix } from "/public/helpers.js";
 
 export default function AdminLogoutModal ({logoutModal, setLogoutModal}) {
 

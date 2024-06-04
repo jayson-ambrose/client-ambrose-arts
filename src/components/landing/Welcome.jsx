@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Heading from "./Heading"
-import { loggedInAtom } from "../lib/atoms"
+import Heading from "src/components/ui/Heading"
+import { loggedInAtom } from "../../lib/atoms"
 import { useRecoilValue } from "recoil"
 
 

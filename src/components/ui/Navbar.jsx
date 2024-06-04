@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarRoute from "./NavbarRoute";
-import { loggedInAtom, activeUserAtom } from "../lib/atoms";
+import NavbarRoute from "src/components/ui/NavbarRoute";
+import { loggedInAtom, activeUserAtom } from "../../lib/atoms";
 import { useRecoilValue } from "recoil";
 
 export default function Navbar () {

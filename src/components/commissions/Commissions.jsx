@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./Heading";
+import Heading from "src/components/ui/Heading";
 
 export default function Commissions () {
 

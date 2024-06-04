@@ -2,17 +2,17 @@ import React, { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { useSetRecoilState, } from 'recoil'
 import { activeUserAtom, loggedInAtom } from './lib/atoms'
-import { urlPrefix } from './lib/helpers'
+import { urlPrefix } from '/public/helpers.js'
 
 //----------component imports---------------------
-import Navbar from './components/Navbar'
-import LandingPage from './components/LandingPage'
-import TitleLine from './components/TitleLine'
-import Gallery from './components/Gallery'
-import Artists from './components/Artists'
-import Commissions from './components/Commissions'
-import Dashboard from './components/Dashboard'
-import BottomLinks from './components/BottomLinks'
+import Navbar from './components/ui/Navbar'
+import LandingPage from './components/landing/LandingPage'
+import TitleLine from './components/layout/TitleLine'
+import Gallery from './components/gallery/Gallery'
+import Artists from './components/artists/Artists'
+import Commissions from './components/commissions/Commissions'
+import Dashboard from './components/dashboard/Dashboard'
+import BottomLinks from './components/layout/BottomLinks'
 //------------------------------------------------
 
 export default function App() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ArtistModal from "./ArtistModal";
+import ArtistModal from "src/components/artists/ArtistModal";
 
 export default function ArtistCard ({ artist }) {
     
