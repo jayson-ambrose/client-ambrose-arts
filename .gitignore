@@ -22,6 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Helper files that should not change on deploy branch
-~/src/lib/helpers.js

@@ -1,16 +1,16 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ThemedButton from "./ThemedButton";
+import ThemedButton from "src/components/ui/ThemedButton";
 
-export default function GalleryModal ({ galleryModal, setGalleryModal, piece }) {
+export default function ArtistModal ({ artistModal, setArtistModal, artist }) {
 
-    const {id, artist, title, price, category, img_url, status} = piece
+    const {id, name, bio, img_url} = artist
 
     return (
-    <Transition appear show={galleryModal}>
+    <Transition appear show={artistModal}>
       <Dialog
-          open={galleryModal}
-          onClose={() => setGalleryModal(false)}
+          open={artistModal}
+          onClose={() => setArtistModal(false)}
         >
           <Transition.Child
             enter="ease-out duration-300"
@@ -24,15 +24,14 @@ export default function GalleryModal ({ galleryModal, setGalleryModal, piece }) 
             <div className="fixed inset-0 flex justify-center items-center align-center">
               <Dialog.Panel className="w-2/3 rounded bg-offwhite justify-center pb-5">
                 <h1 className='text-center bg-dark text-offwhite font-semibold font-forum text-3xl rounded-t'>
-                  {title}
+                  {name}
                 </h1>
                 <div className='flex flex-col w-full items-center'>
                   <div>
-                    {/* description?  */}
                     <img className='w-fit' src={img_url}/>
-                  </div>
-                    <h1 className='font-advent text-xl '>By: {artist.name}</h1>
-                    <ThemedButton text='Contact Artist'/>
+                  </div>                  
+                  <p>{artist.bio}</p>
+                  <ThemedButton text='Contact Artist'/>
                 </div>
               </Dialog.Panel>
             </div>

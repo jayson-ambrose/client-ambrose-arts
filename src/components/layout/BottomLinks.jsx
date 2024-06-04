@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import AdminLoginModal from './AdminLoginModal'
-import AdminLogoutModal from './AdminLogoutModal'
+import AdminLoginModal from '../login-logout/AdminLoginModal'
+import AdminLogoutModal from '../login-logout/AdminLogoutModal'
 import { useRecoilValue } from 'recoil'
-import { loggedInAtom } from '../lib/atoms'
+import { loggedInAtom } from '../../lib/atoms'
 
 export default function BottomLinks() {
 

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import GalleryCard from "./GalleryCard";
-import Heading from "./Heading";
-import ThemedSearchbar from "./ThemedSearchbar";
+import GalleryCard from "src/components/gallery/GalleryCard";
+import Heading from "../ui/Heading";
+import ThemedSearchbar from "src/components/ui/ThemedSearchbar";
 import { useRecoilValue } from "recoil";
-import { urlPrefix } from "../lib/helpers";
+import { urlPrefix } from "/public/helpers.js";
 
 export default function Gallery () {
 

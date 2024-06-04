@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Heading from "./Heading";
-import ArtistCard from "./ArtistCard";
-import { urlPrefix } from "../lib/helpers";
+import Heading from "src/components/ui/Heading";
+import ArtistCard from "src/components/artists/ArtistCard";
+import { urlPrefix } from "/public/helpers.js";
 
 export default function Artists () {
 

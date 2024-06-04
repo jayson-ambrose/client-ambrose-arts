@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom'
 
-import Heading from "./Heading";
-import DashboardNavbar from "./DashboardNavbar";
-import GalleryManager from "./GalleryManager";
+import Heading from "src/components/ui/Heading";
+import DashboardNavbar from "src/components/dashboard/DashboardNavbar";
+import GalleryManager from "./dashboard-gallery-manager/GalleryManager";
 
 export default function Dashboard () {
 

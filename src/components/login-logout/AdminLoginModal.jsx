@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ThemedButton from "./ThemedButton"
-import { loggedInAtom, activeUserAtom } from "../lib/atoms"
+import ThemedButton from "../ui/ThemedButton"
+import { loggedInAtom, activeUserAtom } from "../../lib/atoms"
 import { useRecoilState, useSetRecoilState } from "recoil"
-import { urlPrefix } from "../lib/helpers";
+import { urlPrefix } from "/public/helpers.js";
 
 export default function AdminLoginModal({loginModal, setLoginModal}) {
     const [username, setUsername] = useState('')
